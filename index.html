@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza</title>
+</head>
+
+<body>
+    <h1 style="color: red;">Ryan's Pizza Haven</h1>
+    <h2 style="color: rgb(238, 213, 0);">Toppings - Meat - $2 Other - $1</h2>
+    <div style="display: flex;">
+        <fieldset style="display: inline; background-color: yellow;">
+            <legend>Choose Size <br>↓</legend>
+            <label>
+                <input type="radio" name="size" value="Small" checked> Small - $7.99
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="size" value="Medium"> Medium - $9.99
+            </label>
+            <br>
+            <label>
+                <input type="radio" name="size" value="Large"> Large - $11.99
+            </label>
+        </fieldset>
+        <fieldset style="display: inline; background-color: red;">
+            <legend>Choose Toppings <br>↓</legend>
+            <label>
+                <input type="checkbox" name="toppings"> Pepperoni
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="toppings"> Ham
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="toppings"> Bacon
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="toppings"> Olives
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="toppings"> Hot Peppers
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="toppings"> Onions
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="toppings"> Mushrooms
+            </label>
+    </fieldset>
+    <p id="receipt"> Price Breakdown:<br> Size: </p>
+    <p id="out1"></p>
+</div>
+    <br>
+    <br>
+    <button onclick="calc()">Submit Choice</button>
+    <button onclick="reset()">Reset Image and Choices</button>
+   
+    <script src="Pizza.Js"></script>
+    <div style="position: relative;">
+        <img src="plain slice.png" style="position: absolute; width: 200px;">
+        <img id="bacon" src="bacon-png-transparent-4.png" style="position: absolute; width: 200px; opacity: 0;">
+        <img id="pepperoni" src="Pepperoni.png" style="position: absolute; width: 200px; opacity: 0;">
+        <img id="ham" src="Ham.png" style="position: absolute; width: 200px; opacity: 0;">
+        <img id="olives" src="Olives.png" style="position: absolute; width: 200px; opacity: 0;">
+        <img id="hotpep" src="Hot Peppers.png" style="position: absolute; width: 200px; opacity: 0;">
+        <img id="onions" src="Onions.png" style="position: absolute; width: 200px; opacity: 0;">
+        <img id="mushrooms" src="Mushrooms.png" style="position: absolute; width: 200px; opacity: 0;">
+    </div>
+</html>
+</body>
